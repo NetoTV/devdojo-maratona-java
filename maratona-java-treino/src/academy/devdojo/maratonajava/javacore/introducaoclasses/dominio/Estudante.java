@@ -14,9 +14,8 @@ public class Estudante {
 //	Orientação a objetos foi criada para mapear de forma computacional algo do mundo real.
 //	
 //	Por exemplos, no mundo real, existem pessoas.
-//	Logo para mapear a mesma no mundo computacional.
-//	
-//	Devemos seguir com a criação de uma estrutura que irá gerar uma estrutura organizada denominada Pessoa.
+//	Logo para mapear a mesma no mundo computacional, devemos seguir com a criação de 
+//  uma estrutura que irá gerar uma estrutura de dados organizada denominada Pessoa.
 //	Essa estrutura de criação, é chamada de classe.
 //	
 //	public class Pessoa {
