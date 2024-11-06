@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.introducaoclasses.dominio;
 
-// Classe de domínio Pessoa - Representa uma padrão para o que é uma pessoa
-// do mundo real
+// Classe de domínio Pessoa - Representa uma padrão do que é uma pessoa
+// do mundo real no mundo computacional
 public class Estudante {
 	// Uma pessoa pode ter um nome.
 	public String nome;
