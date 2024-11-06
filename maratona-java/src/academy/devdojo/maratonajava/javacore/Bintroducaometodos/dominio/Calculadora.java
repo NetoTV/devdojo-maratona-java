@@ -14,9 +14,9 @@ public class Calculadora {
 	// a mesma convenção das variáveis).
 	
 	// A Quarta parte é os parenteses "()"
-	// A Quinta é as chaves (Corpo do método)
+	// A Quinta é as chaves "{}" (O Corpo do método)
 	// Dentro do "corpo do método" estará o código que será executado no momento que
-	// o método for utilizado no código!
+	// o método for "chamado".
 	
 	public void somaDoisNumeros() {
 		System.out.println(5 + 4);

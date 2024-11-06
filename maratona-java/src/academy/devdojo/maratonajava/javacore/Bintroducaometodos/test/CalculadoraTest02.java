@@ -8,9 +8,11 @@ public class CalculadoraTest02 {
 		Calculadora calculadora = new Calculadora();
 		
 		// Quando você passa valores para executar um método, o termo técnico
-		// utilizado para citar o ato é dado como argumento, porém caso você 
-		// esteja falando especificamente da implementação dos valores do método
-		// na classe, o nome é parametro.
+		// utilizado para citar o ato é dado como argumento.
+		// Por exemplo, na chamada do método: calculadora.dividir(2, 4), os números
+		// 2 e o 4 serão considerados "argumentos" do método "dividir", já quando 
+		// falamos da própria implementação do método na classe, os dados serão 
+		// chamados de parametros.
 		
 		// Os argumentos passados na execução do método serão colocado dentro das
 		// variáveis locais definidas nos parametros do método dentro da classe

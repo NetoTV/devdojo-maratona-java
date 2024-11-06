@@ -7,7 +7,8 @@ public class EstudanteTest01 {
 		// A esquerda temos uma variável de referência que armazena
 		// Objetos do tipo Estudante
 		// Estudante estudante
-		// e a direita temos uma instânciação de um Objeto da Classe Estudante
+		// e a direita temos uma instânciação da Classe Estudante, que irá gerar um
+    	// objeto do tipo Estudante
 		Estudante estudante = new Estudante();
 		estudante.nome = "Gab";
 		estudante.idade = 17;
