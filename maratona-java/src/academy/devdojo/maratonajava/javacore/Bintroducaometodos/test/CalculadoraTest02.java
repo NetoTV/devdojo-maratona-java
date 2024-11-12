@@ -8,14 +8,24 @@ public class CalculadoraTest02 {
 		Calculadora calculadora = new Calculadora();
 		
 		// Quando você passa valores para executar um método, o termo técnico
-		// utilizado para citar o ato é dado como argumento.
+		// utilizado para se referir ao dado passado é argumento.
 		// Por exemplo, na chamada do método: calculadora.dividir(2, 4), os números
 		// 2 e o 4 serão considerados "argumentos" do método "dividir", já quando 
-		// falamos da própria implementação do método na classe, os dados serão 
-		// chamados de parametros.
+		// falamos da própria implementação do método na classe, as variáveis
+		// locais do método dividir serão chamadas de "parâmetros".
+		// Ex:
+		// public double getDivisao(double numero1, double numero2) {
+		// 		return numero1 / numero2;
+		// }
+		// Nesse caso o numero1 e o numero2 são os parâmetros
+		// e a chamada do método passando os valores são os argumentos:
+		// Classe.getDivisao(2, 6);
+		// o "2" e o "6" são os meus argumentos.
 		
-		// Os argumentos passados na execução do método serão colocado dentro das
-		// variáveis locais definidas nos parametros do método dentro da classe
+		// Em caso de argumentos do tipo primitivo, os mesmos serão "copiados"
+		// em memória para as variáveis locais (paramêtros) do método
+		// portanto quando se utiliza tipos primitivos é passado uma cópia do valor
+		// original e não o valor em si.
 		calculadora.multiplicaDoisNumeros(3, 2);
 	}
 

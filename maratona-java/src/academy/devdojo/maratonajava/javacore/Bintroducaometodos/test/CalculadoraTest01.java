@@ -10,7 +10,7 @@ public class CalculadoraTest01 {
 	// porém a saida (Sysout) existe dentro deles.
 	
 	// No momento de execução do método, o código entra dentro do objeto para
-	// executar o método
+	// executar o método a partir da sua referência armazenada na variável calculadora
 	
 	public static void main(String[] args) {
 		Calculadora calculadora = new Calculadora();
