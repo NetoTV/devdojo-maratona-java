@@ -30,8 +30,8 @@ public class Pessoa {
 	public void setNome(String nome) {
 		// this referência o objeto atual e o this.nome referência ao 
 		// nome do objeto atual
-		// já o nome recebido via parâmetro é uma variável local cujo vai armazenar
-		// a cópia referência em memória da String que foi passada como argumento para o
+		// já o nome recebido via parâmetro é uma variável de referência local cujo vai armazenar
+		// a cópia da referência do endereço memória da String que foi passada como argumento para o
 		// método setNome
 		this.nome = nome;
 	}
@@ -40,8 +40,8 @@ public class Pessoa {
 		return this.nome;
 	}
 	
-	// get - Pega um dado
-	// set - Atualiza um dado
+	// get - Acessar dados 
+	// set - Atualizar dados
 	public void setIdade(int idade) {
 		if(idade < 0) {
 			System.out.println("Idade inválida: " + idade);

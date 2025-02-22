@@ -28,14 +28,13 @@ public class Calculadora {
 	
 	// Métodos com paramêtros
 	// Paramêtros são variáveis locais que só vão existir dentro do escopo
-	// enquanto o método estiver executando, ou seja, dentro das chaves do 
-	// método.
+	// enquanto o método estiver executando, ou seja, dentro das chaves ({}).
 	
-	// Elas só vão se manter "vivas" dentro desse contexto enquanto o método
+	// As variáveis locais só vão se manter "vivas" enquanto o método
 	// estiver sendo executado.
 	// Após isso elas perderão o acesso em memória
 	
-	// É recomendado que um método possua no máximo 3 argumentos
+	// É recomendado que um método possua no máximo 3 parâmetros
 	// O Ideal é dividir em métodos menores caso o mesmo passe de 3 argumentos
 	
 	// num1 e num2 são os "parâmetros" (variáveis locais do método)
@@ -106,7 +105,7 @@ public class Calculadora {
 	
 	// Por baixo dos panos o java transforma o "varargs" em um array
 	// O VarArgs é uma forma mais simples de trabalhar com multiplos
-	// números como argumento, podendo receber múltiplos números em
+	// dados do mesmo tipo como argumento, podendo receber múltiplos números em
 	// sequência ex: somaVarArgs(1, 2, 3, 4) e convertendo os mesmos
 	// para um array posteriormente, ou podendo receber um array inteiro
 	// de uma vez só

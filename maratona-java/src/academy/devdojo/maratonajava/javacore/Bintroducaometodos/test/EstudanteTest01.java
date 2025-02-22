@@ -18,8 +18,7 @@ public class EstudanteTest01 {
 		estudante02.sexo = 'F';
 		
 		// Quando um objeto / Tipo de referência é passado como argumento de um método
-		// A variável local do método armazena uma cópia da referência do objeto
-		// ou seja seu endereço de memória
+		// A variável local do método armazena uma cópia da referência do endereço de memória do objeto
 		impressora.imprime(estudante01);
 		System.out.println("Valor estudante01 EstudanteTest01 = " + estudante01);
 

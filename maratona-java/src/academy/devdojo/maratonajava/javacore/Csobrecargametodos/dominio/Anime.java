@@ -31,7 +31,7 @@ public class Anime {
 
 	// Portanto, sobrecarga é basicamente:
 	// Um método com o mesmo nome de outro
-	// Porém com uma quantidade ou tipo de parâmetros diferentes
+	// Porém com um tem sua quantidade ou tipo de parâmetros diferentes
 	public void init(String nome, String tipo, int episodios, String genero) {
 		this.init(nome, tipo, episodios);
 		this.genero = genero;

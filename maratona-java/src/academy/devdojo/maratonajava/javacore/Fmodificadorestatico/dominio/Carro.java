@@ -7,7 +7,7 @@ public class Carro {
 	// mesmo deixa de ser um dado relacionado diretamente com a instância (O próprio objeto)
 	// e começa a fazer parte da própria classe, como se fosse um metadado da mesma
 	// Nesse momento ele faz parte da própria classe "Carro"
-	// Logo esse valor se torna "global" para todas as classes que podem acessa-lo
+	// Logo esse valor se torna um valor referente a própria classe
 	// Todas instâncias dessa classe compartilham esse mesmo valor em memória
 	private static double velocidadeLimite = 250;
 	
