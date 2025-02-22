@@ -1,0 +1,10 @@
+# Pastas de build
+bin/
+
+# Bytecode
+.class
+
+# Arquivos do Eclipse
+.project
+.classpath
+.settings/
