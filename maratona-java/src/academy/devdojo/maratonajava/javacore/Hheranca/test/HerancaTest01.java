@@ -27,6 +27,30 @@ import academy.devdojo.maratonajava.javacore.Hheranca.dominio.Pessoa;
  * Associação = "Tem um" (relação mais flexível e com menos acoplamento)
  *
  * Prefira associação sempre que possível; herança só quando a relação for realmente verdadeira.
+ * 
+  * [IMPORTANTE] Herança múltipla não existe no Java!!!
+ *
+ * Isso significa que uma classe não pode herdar de mais de uma classe ao mesmo tempo.
+ * Em Java você só pode fazer:
+ *
+ *     class A extends B
+ *
+ * e nunca:
+ *
+ *     class A extends B, C  // isso NÃO existe.
+ *
+ * O Java evita herança múltipla porque isso causaria conflitos como:
+ * - métodos iguais vindos de superclasses diferentes,
+ * - atributos duplicados,
+ * - regras de resolução de chamadas muito complexas.
+ *
+ * Para resolver a necessidade de "herdar" comportamentos de várias fontes,
+ * o Java usa múltiplas interfaces:
+ *
+ *     class A implements X, Y, Z
+ *
+ * Isso permite combinar comportamentos diferentes sem os problemas da herança múltipla,
+ * já que interfaces fornecem contratos (métodos) mas não trazem atributos nem estado.
  */
 public class HerancaTest01 {
 	public static void main(String[] args) {
@@ -34,15 +58,15 @@ public class HerancaTest01 {
 		endereco.setRua("Rua 3");
 		endereco.setCep("012345-209");
 		
-		Pessoa pessoa = new Pessoa();
-		pessoa.setNome("Zoro");
+		Pessoa pessoa = new Pessoa("Zoro");
+//		pessoa.setNome("Zoro");
 		pessoa.setCpf("576.116.700-00");
 		pessoa.setEndereco(endereco);
 		
 		pessoa.imprime();
 		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("Oda Nobunaga");
+		Funcionario funcionario = new Funcionario("Oda Nobunaga");
+//		funcionario.setNome("Oda Nobunaga");
 		funcionario.setCpf("355.054.170-86");
 		funcionario.setEndereco(endereco);
 		funcionario.setSalario(20000);

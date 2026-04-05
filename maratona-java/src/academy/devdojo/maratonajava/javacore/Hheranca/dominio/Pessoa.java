@@ -1,9 +1,35 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
+/*
+ * A classe Pessoa é a classe Mãe, em relação a classe Funcionário
+ */
+
 public class Pessoa {
-	private String nome;
-	private String cpf;
-	private Endereco endereco;
+	protected String nome;
+	protected String cpf;
+	protected Endereco endereco;
+	
+	static {
+		System.out.println("Dentro do bloco inicialização estático de Pessoa");
+	}
+	
+	{
+		System.out.println("Dentro do bloco inicialização de Pessoa 1");
+	}
+	
+	{
+		System.out.println("Dentro do bloco inicialização de Pessoa 2");
+	}
+	
+	public Pessoa(String nome) {
+		System.out.println("Dentro do construtor de pessoa");
+		this.nome = nome;
+	}
+	
+	//	public Pessoa(String nome, String cpf) {
+	//		this(nome); // O this tem que ser a primeira linha executavel dentro de um construtor
+	//		this.cpf = cpf;
+	//	}
 	
 	public void imprime() {
 		System.out.println(this.nome);

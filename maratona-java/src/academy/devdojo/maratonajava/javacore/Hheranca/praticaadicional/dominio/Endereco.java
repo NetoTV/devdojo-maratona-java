@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
+package academy.devdojo.maratonajava.javacore.Hheranca.praticaadicional.dominio;
 
 /*
  * Associações entre classes criam dependências (acoplamento). Isso é normal,
@@ -18,13 +18,6 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Endereco {
 	private String rua;
 	private String cep;
-	
-	// Ao alterarmos o atributo nome para protected, todas classes que estiverem no mesmo pacote que a classe Pessoa,
-	// podem alterar diretamente a variável nome.
-	//	public void imprime() {
-	//		Pessoa p = new Pessoa();
-	//		p.nome = "teste";
-	//	}
 	
 	public String getRua() {
 		return rua;
