@@ -19,13 +19,6 @@ public class Endereco {
 	private String rua;
 	private String cep;
 	
-	// Ao alterarmos o atributo nome para protected, todas classes que estiverem no mesmo pacote que a classe Pessoa,
-	// podem alterar diretamente a variável nome.
-	//	public void imprime() {
-	//		Pessoa p = new Pessoa();
-	//		p.nome = "teste";
-	//	}
-	
 	public String getRua() {
 		return rua;
 	}
