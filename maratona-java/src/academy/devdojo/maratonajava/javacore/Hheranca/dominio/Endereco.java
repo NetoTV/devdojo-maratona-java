@@ -1,20 +1,12 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 /*
- * Associações entre classes criam dependências (acoplamento). Isso é normal,
- * mas quando usamos associações bidirecionais sem necessidade, acabamos
- * aumentando o acoplamento de forma desnecessária.
- *
- * Quanto maior o acoplamento, menor é a capacidade de reutilização e
- * de manutenção da classe, já que ela passa a depender do funcionamento
- * de outras classes.
- *
- * Por isso, prefira associações unidirecionais sempre que possível.
- *
- * Neste caso, não faz sentido que Endereco conheça Pessoa (HAS-A). Apenas
- * Pessoa precisa conhecer seu Endereco. Assim evitamos uma associação
- * bidirecional desnecessária.
- */
+ * Quando realizamos associação no Java estamos acoplando as classes
+ * Se o acoplamento for bidirecional (ambas classes conheceram umas as outras), faz com que o acoplamento seja forte.
+ * Isso faz com que seja mais díficil de reutilizarmos as classes.
+ * Por tanto só deve se realizar o acoplamento bidirecional na associação quando realmente faz sentido.
+ * Nesse contexto, faz sentido a Pessoa ter um Endereço, mas não faz sentido o Endereço ter uma Pessoa.
+ * */
 public class Endereco {
 	private String rua;
 	private String cep;
@@ -22,15 +14,12 @@ public class Endereco {
 	public String getRua() {
 		return rua;
 	}
-	
 	public void setRua(String rua) {
 		this.rua = rua;
 	}
-	
 	public String getCep() {
 		return cep;
 	}
-	
 	public void setCep(String cep) {
 		this.cep = cep;
 	}

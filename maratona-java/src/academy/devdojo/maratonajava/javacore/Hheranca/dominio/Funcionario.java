@@ -1,26 +1,23 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 /*
- * A classe Funcionario representa um Funcionário no mundo real.
- * Todo funcionario é uma pessoa
- * Portanto o mesmo precisa ter um Nome, Cpf, Endereco e salário.
- * Portanto todo funcionario deve possuir as mesmas caracteristicas e comportamentos que uma pessoa.
- * Porem para nós não termos duplicar as caracteristicas (atributos) e comportamentos (métodos) das classe
- * Pessoa. Vamos "extender" as caracteristicas e comportamentos da classe Pessoa, para o funcionário.
- * A relação entre Funcionário e Pessoa, é de IS-A ou seja, Funcionario é um Pessoa.
- * A partir disso podemos usar a palavra "extends" para extender as  caracteristicas e comportamentos da classe Pessoa,
- * para o funcionário.
+ * Relacionamento Funcionario x Pessoa -> IS-A (Funcionário é uma Pessoa) - Herança
+ * Relacionamento Pessoa x Endereco -> HAS-A (Pessoa tem um Endereço) - Associação
  * 
- * Podemos afirmar também que a Classe Funcionário é uma Classe Especializada da Classe Pessoa.
- * e por conta disso a Classe Pessoa é uma classe mais Genérica.
+ * Funcionário herda os atributos e comportamentos de Pessoa e adiciona características específicas.
+ * 
+ * Portanto Pessoa é um conceito mais genérico.
+ * Já Funcionário é um conceito mais especializado de Pessoa.
+ * Por isso ele vai estender o que uma Pessoa é.
+ * 
+ * Para isso vamos utilizar a palavra reservada extends.
  */
 public class Funcionario extends Pessoa {
 	private double salario;
-	
+
 	public double getSalario() {
 		return salario;
 	}
-	
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
